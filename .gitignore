@@ -10,6 +10,8 @@
 # Icon must end with two \r
 Icon
 
+# node_modules 숨기기
+/node_modules
 
 # Thumbnails
 ._*
