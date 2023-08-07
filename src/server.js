@@ -15,6 +15,10 @@ const PORT = 4000;
 // 1. 익스프레스 에플리케이션(서버)을 만들어줌
 const app = express();
 const logger = morgan("dev");
+
+//뷰엔진.
+app.set("view engine","pug");
+app.set("views" , process.cwd() + "/src/views");
 app.use(logger);
 
 //라우터 만들기(각 폴더로 이전)
